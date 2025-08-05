@@ -1,0 +1,296 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    text-align:center;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #004a99;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: #00e6e6;
+    text-shadow: 0 0 8px #00e6e6;
+    transition: all 0.3s ease-in-out;
+}
+
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #004a99;
+    color: white;
+}
+
+.project-card {
+    background: #eef;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode section {
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+.toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+    .toggle-btn:hover {
+        background-color: #34495e;
+    }
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #2980b9;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .download-btn:hover {
+        background-color: #218838;
+    }
+.profile-pic {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #34495e;
+    transition: opacity 0.3s ease;
+}
+.contact-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+    .contact-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section a {
+        color: #0077cc;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contact-section .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    filter: grayscale(1);
+}
+
+    .social-icons img:hover {
+        transform: scale(1.2);
+        filter: grayscale(0);
+    }
+.skills-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+    .skills-section h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .skill-item img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
+
+        .skill-item img:hover {
+            transform: scale(1.2);
+        }
+
+    .skill-item p {
+        margin-top: 10px;
+        font-weight: 500;
+    }
+.section-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    /* Heading Style */
+    .section-card h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #0a3d62;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    /* Paragraph Style */
+    .section-card p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* Email Link Style */
+    .section-card a {
+        color: #007bff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .section-card a:hover {
+            text-decoration: underline;
+        }
+    .section-card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    }
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+    .download-btn:hover {
+        background-color:  green;
+    }
+
